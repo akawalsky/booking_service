@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: booking_development
+  pool: 5
+  username: postgres
+  password: lounge
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: booking_test
+  pool: 5
+  username: postgres
+  password: lounge
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: booking_production
+  pool: 5
+  username: postgres
+  password: lounge
+
+cucumber:
+  <<: *TEST
